@@ -1,0 +1,103 @@
+<!---->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foam Wala projects</title>
+    <style>
+     body{
+        height: 100vh;
+        width: 100vw;
+        background-color: #3adc6d;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+     }
+    
+     .body{
+        height: 68em;
+        width: 60vw;
+        background-color: whitesmoke;
+     }
+     .body2{
+       margin: auto;
+       padding: 2rem;
+       margin-bottom: 1rem;
+     }
+        #SubmitA{
+            height: 1.5rem;
+            width: 70vh;
+            background-color: #3adc6d;
+            border: 1px solid black;
+            border-radius: 0.3em;
+            font-size: 20px;
+            font-weight: 50px;
+        }
+        #feedback1{
+            height: 300px;
+            width: 70vh;
+        }
+        .h1{
+            display:flex;
+            justify-content: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="class">
+    <h1 class="h1">GeeksforGeeks Survey Form</h1>
+    <div class="body">
+
+        <div class="body2">
+            <form action="kuch bhi">Name</form>
+          <input type="text" class="input1" placeholder="Enter Your Name"><br>
+          <br>
+          <form action="">Email</form>
+          <input type="text" class="input2" placeholder="Enter Your Email"> <br><br>
+          <form action="">Age</form>
+          <input type="text" class="input3" placeholder="Enter your Age"><br><br>
+          <form action="">Which Option best describe you?</form><br>
+          <select name="Student" id="occupation">
+            <option value="" class="studnet1">Student</option>
+            <option value="" class="studnet2">Intern</option>
+            <option value="" class="studnet3">Full Time</option>
+            <option value="" class="studnet4">Sde2</option>
+          </select><br><br>
+          <form action="">Would you recommend GeeksforGeeks to a friend?</form>
+          <ul class="ul1">
+            <input type="checkBox">YES <br>
+           <input type="checkbox">No <br>
+           <input type="checkbox">Maybe <br>
+          </ul>
+
+          <form action="">Language and Frameworks known (check all that apply)</form>
+          <ul>
+            <input type="checkBox">C <br>
+            <input type="checkBox">C++ <br>
+            <input type="checkBox">C# <br>
+            <input type="checkBox">java <br>
+            <input type="checkBox">Python<br>
+            <input type="checkBox">JavaScript<br>
+            <input type="checkBox">React<br>
+            <input type="checkBox">Angular<br>
+            <input type="checkBox">Django<br>
+            <input type="checkBox">Spring<br>
+          </ul>
+          
+          <div class="feedback">
+             <label for="textarea">Any comments for sugestions</label> <br><br>
+             <textarea  name="feedback" id="feedback1"  placeholder="Comments Your Tought!"></textarea>
+          </div>
+          <br><br>
+
+          <div class="submit">
+             <button id="SubmitA">Submit</button>
+          </div>
+        </div>
+    </div>
+ </div>
+</body>
+</html>

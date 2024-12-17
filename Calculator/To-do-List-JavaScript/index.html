@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create To do list</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .div{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(174, 232, 239);
+            display: flex;
+            justify-content: center;
+        }
+        .div2{
+            margin-top: 13em;
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+        }
+        .div3{
+            display: flex;
+            flex-direction: row;
+            gap: 1em;
+            height: 5em;
+            width: 20em;
+            background-color: aliceblue;
+            padding-left: 1em;
+        }
+     li{
+        list-style: none;
+     }
+     #input{
+        margin-top: 1em;
+        margin-left: 1em;
+        height: 3em;
+        width: 15em;
+     }
+
+     .div4{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        height: 15em;
+        width: 20em;
+        background-color: aliceblue;
+        padding-left: 1em;
+        padding-top: 1em;
+     }
+
+     .button1{
+        height: 3em;
+        width: 3em;
+        margin-top: 1em;
+     }
+
+     input{
+        margin-right: 1em;
+        height: 1.3em;
+        width:2em;
+     }
+     
+     li{
+        font-weight: 900;
+     }
+    </style>
+</head>
+<body>
+    <div class="div">
+          <div class="div2">
+            <div class="div3">
+                 <input type="text" placeholder="Add a Todo..." id="input">
+                 <button class="button1">Add</button>
+            </div>
+            <div class="div4">
+                <li><input type="checkbox">I will wake upto 9am</li>
+                <li><input type="checkbox">Then have take some bath</li>
+                <li><input type="checkbox">Then i will have some breakfast</li>
+                <li><input type="checkbox">Then get Ready for libarary</li>
+                <li><input type="checkbox">I will give 2 hours for web devlopment</li>
+                <li><input type="checkbox">And rest of 6 hours dsa</li>
+            </div>
+          </div>
+    </div>
+</body>
+<script>
+    
+</script>
+</html>

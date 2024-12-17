@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: none;
+}
+
+
+.div{
+    height: 50vh;
+    width: 30vw;
+    border: 2px solid black;
+}

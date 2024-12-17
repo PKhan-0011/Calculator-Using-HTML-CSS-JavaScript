@@ -1,0 +1,614 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai Aur Code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+   const changeText = function() {
+     document.querySelector('h1').innerHTML = "BestJavaScript Course!";
+   }
+ const changeMe =  setTimeout(changeText, 2000);
+
+ document.querySelector('#stop').addEventListener('click', () => {
+    clearTimeout(changeMe)
+    console.log("Stopped");
+ }) 
+
+</script>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur Code</h1>
+    <button id="Start">Start</button>
+    <button id="Stop">Stop</button>
+</body>
+<script>
+//     const name = () => {
+//         console.log("parvej", Date.now());
+//     }
+
+//    const intervalId =  setInterval(name, 2000);
+   
+//  clearInterval(intervalId);
+// dekh abb tughe ek assigment banana hai jaise start ko click karu to print hona strat ho jaye. and stop ko click karu to stop ho jaye.
+
+const start = () => {
+    const name = () => {
+        console.log("Parvej");
+    }
+
+   const name2 =  setInterval(name, 2000);
+};
+const stop = () => {
+    clearInterval(name2);
+};
+
+document.getElementById('Start').addEventListener('click', start);
+document.getElementById('Stop').addEventListener('click', stop);
+
+
+
+</script>
+</html> -->
+
+ <!--Projects One color-Chainge!-->
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .div-container{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5em;
+    }
+    
+    .button{
+        height: 10em;
+        width: 10em;
+    }
+
+    #grey{
+        background-color:grey ;
+    }
+
+    #White{
+        background-color: White;
+        border: 1px solid black;
+    }
+
+    #Blue{
+        background-color: blue;
+    }
+
+    #Yellow{
+       background-color: yellow;
+    }
+     
+    .div2{
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        }
+      
+        .div{
+            height: 100vh;
+            width: 100vw;
+        }
+ </style>
+ <body>
+      <div class="div">
+        <div class="div-container">
+            <h1>Projects 1 Color Change!</h1>
+             <div class="div2">
+             <span class="button" id="grey"></span>
+             <span class="button" id="White"></span>
+             <span class="button" id="Blue"></span>
+             <span class="button" id="Yellow"></span>
+             </div>
+             <h3>Try clicking on one of the colors above to change the backGround color of this page!</h3>
+        </div>
+      </div>
+ </body>
+ <script>
+   
+   const buttons = document.querySelectorAll('.button');
+   const body = document.querySelector('.div');
+    
+   buttons.forEach((button) => {
+      button.addEventListener('click', (e) => {
+          console.log(e);
+          console.log(e.target);
+           if(e.target.id === 'grey'){
+              body.style.backgroundColor = e.target.id;
+           }
+           else if(e.target.id === 'White'){
+            body.style.backgroundColor = e.target.id;
+           }
+
+           else if(e.target.id === 'Blue'){
+            body.style.backgroundColor = e.target.id;
+           }
+
+           else if(e.target.id === 'Yellow'){
+            body.style.backgroundColor = e.target.id;
+           }
+      })
+   });
+   
+ </script>
+ </html> -->
+
+
+
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st Project Chai aur Code!</title>
+ </head>
+ <style>
+     *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .div-container{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5em;
+    }
+    
+    .button{
+        height: 10em;
+        width: 10em;
+    }
+
+    #grey{
+        background-color:grey ;
+    }
+
+    #White{
+        background-color: White;
+        border: 1px solid black;
+    }
+
+    #Blue{
+        background-color: blue;
+    }
+
+    #Yellow{
+       background-color: yellow;
+    }
+     
+    .div2{
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        }
+      
+        .div{
+            height: 100vh;
+            width: 100vw;
+        }
+ </style>
+ <body>
+    <div class="div">
+        <div class="div-container">
+            <h1>Projects 1 Color Change!</h1>
+             <div class="div2">
+             <span class="button" id="grey"></span>
+             <span class="button" id="White"></span>
+             <span class="button" id="Blue"></span>
+             <span class="button" id="Yellow"></span>
+             </div>
+             <h3>Try clicking on one of the colors above to change the backGround color of this page!</h3>
+        </div>
+      </div>
+ </body>
+ <script>
+    const body = document.querySelector('.div');
+    const buttons = document.querySelectorAll('.button');
+    
+    buttons.forEach((button) => {
+        button.addEventListener('click', (e) => {
+            console.log(e);
+            console.log(e.target);
+
+            if(e.target.id === 'grey'){
+                body.style.backgroundColor = e.target.id;
+            }
+
+            else if(e.target.id === 'White'){
+                body.style.backgroundColor = e.target.id;
+            }
+            else if(e.target.id === 'Blue'){
+                body.style.backgroundColor = e.target.id;
+            }
+            else if(e.target.id === 'Yellow'){
+                body.style.backgroundColor = e.target.id;
+            }
+        })
+    });
+
+ </script>
+ </html> -->
+
+
+<!-- 2nd Projects BMI CALCULATOR!-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">Chai aur Code!</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const set = setTimeout(() => {
+        document.getElementById('start').addEventListener('click', () => {
+            document.getElementById('h1').innerHTML = "Best JavaScript series";
+        })
+    })
+
+    document.getElementById('stop').addEventListener('click',() => {
+        clearTimeout(set);
+        console.log("Stop");
+    });
+</script>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3rd Projects</title>
+</head>
+<body>
+    <h1 id="h1">Chai Aur JavaScript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+   // if i click strat button then setInterval start hona chaiye; else me stop click karunga to stop hona chaiye;
+  
+   document.getElementById('start').addEventListener('click', () => {
+       const set = setInterval(() => {
+               console.log("Parvej", Date.now());
+       }, 1000);
+   });
+
+    document.getElementById('stop').addEventListener('click', () => {
+        clearInterval(set);
+    });
+</script>
+</html> -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="h1">Chai aur code!</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // agar mai start ko click karta hu to wo set interval start ho jata hai and agar mai stop ko click krta hu to wo ruk jata hai;
+    //  const set = setInterval(() => {
+    //     console.log("Parvej", Date.now());
+    // }, 1000);
+
+    // clearInterval(set);
+    // ye to ho gya agar click start kru to interval me print hona chaiye; and stopkaru to wahi rikhna chaiye okkh!
+    
+    document.getElementById('start').addEventListener('click', () => {
+        const set = setInterval(() => {
+            console.log("Parvej", Date.now());
+        }, 1000);
+    });
+
+    document.getElementById('stop').addEventListener('click', () => {
+        clearInterval(set);
+    });
+
+</script>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects hai Async awiat ka!</title>
+</head>
+<body style="background-color: black;">
+    <h1 class="h1" style="color: white;">Start Should change the BackGround color Every Second</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+ <script>
+    const randomColor = function () {
+        const hex = '0123456789ABCDEF';
+        let color = '#';
+        for(let i = 0; i<= 6; i++){
+            color += hex[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    };
+    
+    let intervalId;
+
+   const startChangeingColor = function(){
+       intervalId = setInterval(changeColor,2000);
+
+      function changeBgColor() {
+         document.body.style.backgroundColor = randomColor();
+      };
+
+      const stopChangingColor = function () {
+         clearInterval(intervalId);
+      };
+     
+    document.getElementById('start').addEventListener('click', startChangeingColor);
+
+    document.getElementById('stop').addEventListener('click', stopChangingColor);
+    
+ </script>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">Chai Aur Code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+   const set =  setTimeout(() => {
+        document.getElementById('h1').innerHTML = 'Best JavaScript Course!';
+    }, 2000);
+    // if i click stop button then ye sara process stop hona chaiye;
+    document.getElementById('stop').addEventListener('click', () => {
+      clearTimeout(set);
+    });
+</script>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">Chai Aur Code</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+
+    let set = null;
+    // start ko click karu to wo start ho jaye and stop ko click karu to stop ho jaye;
+    document.getElementById('start').addEventListener('click', () => {
+        console.log("Start button clicked");
+         if(!set){
+            set = setInterval(() => {
+            console.log("Parvej", Date.now());
+        }, 2000);
+        console.log("IntervalStarted");
+         }
+    });
+
+    document.getElementById('stop').addEventListener('click', () => {
+        console.log("stop Button clicked");
+         if(set){
+            clearInterval(set);
+            set = null;
+            console.log("Interval cleared");
+         }
+    });
+</script>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">Chai Aur Code!</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+
+    let set;
+    // agar mai start button click karta hu to start hona chaiye and stop button click karta hu to stop hona chiaye;
+   document.getElementById('start').addEventListener('click', () => {
+      if(!set){
+        set =   setInterval( () => {
+         console.log("Parvej", Date.now());
+       }, 2000);
+      }
+   });
+
+   document.getElementById('stop').addEventListener('click', () => {
+       if(set){
+        clearInterval(set);
+        set = null;
+       }
+   });
+</script>
+</html> -->
+
+<!--Project1 generate a random Calour-->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">Chai Aur Code!</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+  
+  let set;
+  const randomColor = function (){
+     const hex = '0123456789ABCDEF';
+     let color = '#';
+
+     for(let i = 0; i<6; i++){
+        color += hex[Math.floor(Math.random()*16)]
+     }
+     return color;
+  }
+
+  document.querySelector('#start').addEventListener('click', () => {
+     if(!set){
+    set = setInterval(() => {
+      document.body.style.backgroundColor = randomColor();
+    },2000);
+     }
+  })
+
+  document.querySelector('#stop').addEventListener('click', () => {
+     if(set){
+        clearInterval(set);
+     }
+     set = null;
+  });
+
+  console.log(randomColor());
+
+</script>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">Chai Aur Code!</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+
+    let set;
+    // agar mai start button click karta hu to start hona chaiye and stop button click karta hu to stop hona chiaye;
+   document.getElementById('start').addEventListener('click', () => {
+      if(!set){
+        set =   setInterval( () => {
+         console.log("Parvej", Date.now());
+       }, 2000);
+      }
+   });
+
+   document.getElementById('stop').addEventListener('click', () => {
+       if(set){
+        clearInterval(set);
+        set = null;
+       }
+   });
+</script>
+</html> -->
+
+<!--Project1 generate a random Calour-->
+
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">Chai Aur Code!</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+const randomColor = function(){
+    const hex = '0123456789ABCDEF';
+    let color = '#';
+
+    for(let i = 0; i<6; i++){
+       color += hex[Math.floor(Math.random * 16)];
+    }
+};
+
+document.getElementById('start').addEventListener(() => {
+     const set = setInterval(() => {
+        document.body.style.backgroundColor = randomColor;
+    }, 1000);
+});
+
+document.getElementById('stop').addEventListener( () => {
+    clearInterval(set);
+});
+console.log(randomColor());
+</script>
+</html>  -->
+
+
+
+
